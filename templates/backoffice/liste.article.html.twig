@@ -1,0 +1,47 @@
+{% extends "base.backoffice.html.twig" %}
+
+{% block title %}
+    Backoffice | Liste Article
+{% endblock %}
+
+{% block body %}
+    <h1 class="text-center">Liste des articles</h1>
+
+    <table class="table table-striped mx-2" id="table-backoffice">
+        <thead>
+            <tr>
+                {% for data in colonnes %}
+                    <th class="text-center">{{data|upper}}</th>
+                {% endfor %}
+                    <th class="text-center">ACTION</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for data in cellules %}
+                <tr>
+                    <td class="text-center">{{data.id}}</td>
+                    <td class="text-center">{{data.categorie}}</td>
+                    <td>{{data.commentaire}}</td>
+                    <td class="text-center">{{data.date|date("d/m/y")}}</td>
+                    <td>{{data.titre}}</td>
+                    {% if data.photo != null %}
+                        <td class="text-center"><img src="{{ asset('img/' ~ data.photo) }}" alt="" style="width: 40%;"></td>
+                    {% else %}
+                        <td class="text-danger text-center">Aucune photo téléchargée</td>
+                    {% endif %} 
+                    <td >
+                        <div class="d-flex justify-content-center nowrap">
+                            <a href="#" class="me-3" onclick="return(confirm('Etes-vous sur de vouloir supprimer cet article : {{ data.titre }}' ))">Supprimer</a>
+                            <a href="#" class="">Modifier</a>
+                        <div>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+            
+        
+
+        
+    
+{% endblock %}

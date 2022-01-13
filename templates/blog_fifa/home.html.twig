@@ -1,0 +1,250 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+    {# Message permettant de dire a l'utilisateur que son email est authentifié #}
+    {% for message in app.flashes('success') %}
+        <div class="alert alert-success" role="alert">{{ message}}</div>
+    {% endfor %}
+
+<div class="p-e">
+</div>
+
+<div class="">
+
+    <div class="container-top col-8 mx-auto my-auto">
+        <div class="container-top-left d-flex align-items-center">
+            <div class="mx-5" >
+                <div class="d-flex flex-start mt-3">
+                    <h4>
+                        <span>Articles a la une</span>
+                        <span class="trait"></span>
+                    </h4>
+                </div>
+                <img src="{{asset('img/TOTY-1.jpg')}}" class="img-fluid" alt="...">
+                <div class="">
+                    <h5>Toty</h5>
+                    <p class="">Some quick example text to build on the card title and make up the bulk of the card's content. <a href="">Lire la suite</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-top-right">
+                <div class="mt-2 ms-2">
+                    <h4>
+                        <span>Articles récentes</span>
+                        <span class="trait"></span>
+                    </h4>
+                </div>
+            <a href="">
+                <div class="article-right d-flex flex-row">
+                    <div class="d-flex align-items-start col-6 mt-1 me-3">
+                        <img src="{{asset('img/TOTY-1.jpg')}}" class="img-fluid ps-2" alt="..." height="80%" >
+                    </div>
+                    <div class="d-flex flex-column col-6 ">
+                        <h2 class="text-article uppercase mb-3">Toty</h2>
+                        <p class="text-article">gfkqs ughsqke ghsqigfqskfgh kq bqzerk hsefgh slgf hzselfg heogfhes hik</p>
+                    </div>
+                </div>
+            </a>
+             <a href="">
+                <div class="article-right d-flex flex-row">
+                    <div class="d-flex align-items-start col-6 mt-1 me-3">
+                        <img src="{{asset('img/headliner.jpg')}}" class="img-fluid ps-2" alt="..." height="80%" >
+                    </div>
+                    <div class="d-flex flex-column col-6 ">
+                        <h2 class="text-article uppercase">headliner</h2>
+                        <p class="text-article">gfkqs ughsqke ghsqigfqskfgh kq bqzerk hsefgh slgf hzselfg heogfhes hik</p>
+                    </div>
+                </div>
+            </a>
+             <a href="">
+                <div class="article-right d-flex flex-row">
+                    <div class="d-flex align-items-start col-6 mt-1 me-3">
+                        <img src="{{asset('img/dce-kante.jpg')}}" class="img-fluid ps-2" alt="..." height="80%" >
+                    </div>
+                    <div class="d-flex flex-column col-6 ">
+                        <h2 class="text-article uppercase">dce kanté</h2>
+                        <p class="text-article">gfkqs ughsqke ghsqigfqskfgh kq bqzerk hsefgh slgf hzselfg heogfhes hik</p>
+                    </div>
+                </div>
+            </a>            
+            <a href="" class="fs-4 me-2 underline-hover">Tout les articles</a>
+        </div>
+    </div>
+
+   <div class="container-block-sbc col-8 mx-auto mt-5">
+        <div class="border-bottom">
+            <h2>Totw || Fifa 22</h2>
+        </div>
+        <p class="col-10">fh voi qsdqe jgeh gmqz hg zgh q hqegh qzoeg hzpqetg hezmo gheqogz efgoeqgfh zghzqfh z ze eifz ofh zeof jzzehf zigfuhz fogze gf iz hfqs hdfqsdhf qfh qhqzeo fhqofh zeof hof hefhzeo f</p>
+        <div class="d-flex flex-row">
+            <div class="col-6">
+                <h3>Article à la une</h3>
+            </div>
+            <div class="col-6 ms-5">
+                <h3 class="ms-5">Derniers articles</h3>
+            </div>
+
+        </div>
+        <div class="d-flex flex-row mt-3">
+            <div class="col-6">
+                <img src="{{asset('../img/totw-2.jpg')}}" alt="" class="img-fluid">
+                <a href="#">Aouar</a>
+                <p>rghfndfug hrghq i ghsdgh ezaqoegf hjqohgfk shdgf qgiq sjhg qdg ud qsghsdflghddgyhqg hdsqg</p>
+            </div>
+            <div class="d-flex flex-row flex-wrap justify-content-end col-6 ">
+                <div class="col-5 ms-5">
+                    <img src="{{asset('../img/TOTY-1.jpg')}}" alt="" class="img-fluid">
+                    <a href="#">Aouar</a>
+                    <p>rghfndfug hrghq i ghsdgh ezaqoegf hjqohgfk shdgf qgiq sjhg qdg ud qsghsdflghddgyhqg hdsqg</p>
+                </div>
+                <div class="col-5 ms-5">
+                    <img src="{{asset('../img/TOTY-1.jpg')}}" alt="" class="img-fluid">
+                    <a href="#">Aouar</a>
+                    <p>rghfndfug hrghq i ghsdgh ezaqoegf hjqohgfk shdgf qgiq sjhg qdg ud qsghsdflghddgyhqg hdsqg</p>
+                    </div>
+                <div class="col-5 ms-5">
+                    <img src="{{asset('../img/TOTY-1.jpg')}}" alt="" class="img-fluid">
+                    <a href="#">Aouar</a>
+                    <p>rghfndfug hrghq i ghsdgh ezaqoegf hjqohgfk shdgf qgiq sjhg qdg ud qsghsdflghddgyhqg hdsqg</p>
+                </div>
+                <div class="col-5 ms-5">
+                    <img src="{{asset('../img/TOTY-1.jpg')}}" alt="" class="img-fluid">
+                    <a href="#">Aouar</a>
+                    <p>rghfndfug hrghq i ghsdgh ezaqoegf hjqohgfk shdgf qgiq sjhg qdg ud qsghsdflghddgyhqg hdsqg</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-block-sbc col-8 mx-auto mt-5">
+        <div class="border-bottom">
+            <h2>Sbc || Dce Fifa 22</h2>
+        </div>
+        <p class="col-10">fh voi qsdqe jgeh gmqz hg zgh q hqegh qzoeg hzpqetg hezmo gheqogz efgoeqgfh zghzqfh z ze eifz ofh zeof jzzehf zigfuhz fogze gf iz hfqs hdfqsdhf qfh qhqzeo fhqofh zeof hof hefhzeo f</p>
+        <div class="d-flex flex-row">
+            <div class="col-6">
+                <h3>Article à la une</h3>
+            </div>
+            <div class="col-6 ms-5">
+                <h3 class="ms-5">Derniers articles</h3>
+            </div>
+
+        </div>
+        <div class="d-flex flex-row mt-3">
+            <div class="col-6">
+                <img src="{{asset('../img/dce-kante.jpg')}}" alt="" class="img-fluid">
+                <a href="#">Aouar</a>
+                <p>rghfndfug hrghq i ghsdgh ezaqoegf hjqohgfk shdgf qgiq sjhg qdg ud qsghsdflghddgyhqg hdsqg</p>
+            </div>
+            <div class="d-flex flex-row flex-wrap justify-content-end col-6 ">
+                <div class="col-5 ms-5">
+                    <img src="{{asset('../img/TOTY-1.jpg')}}" alt="" class="img-fluid">
+                    <a href="#">Aouar</a>
+                    <p>rghfndfug hrghq i ghsdgh ezaqoegf hjqohgfk shdgf qgiq sjhg qdg ud qsghsdflghddgyhqg hdsqg</p>
+                </div>
+                <div class="col-5 ms-5">
+                    <img src="{{asset('../img/TOTY-1.jpg')}}" alt="" class="img-fluid">
+                    <a href="#">Aouar</a>
+                    <p>rghfndfug hrghq i ghsdgh ezaqoegf hjqohgfk shdgf qgiq sjhg qdg ud qsghsdflghddgyhqg hdsqg</p>
+                    </div>
+                <div class="col-5 ms-5">
+                    <img src="{{asset('../img/TOTY-1.jpg')}}" alt="" class="img-fluid">
+                    <a href="#">Aouar</a>
+                    <p>rghfndfug hrghq i ghsdgh ezaqoegf hjqohgfk shdgf qgiq sjhg qdg ud qsghsdflghddgyhqg hdsqg</p>
+                </div>
+                <div class="col-5 ms-5">
+                    <img src="{{asset('../img/TOTY-1.jpg')}}" alt="" class="img-fluid">
+                    <a href="#">Aouar</a>
+                    <p>rghfndfug hrghq i ghsdgh ezaqoegf hjqohgfk shdgf qgiq sjhg qdg ud qsghsdflghddgyhqg hdsqg</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="container-block-evenement col-8 mx-auto mt-5 ">
+        <div class="border-bottom">
+            <h2>Evenement || Fifa 22</h2>
+        </div>
+        <p class="col-10">fh voi qsdqe jgeh gmqz hg zgh q hqegh qzoeg hzpqetg hezmo gheqogz efgoeqgfh zghzqfh z ze eifz ofh zeof jzzehf zigfuhz fogze gf iz hfqs hdfqsdhf qfh qhqzeo fhqofh zeof hof hefhzeo f</p>
+        <div class="d-flex flex-row">
+            <div class="col-6">
+                <h3>Derniers articles</h3>
+            </div>
+            <div class="col-6">
+                <h3>Article à la une</h3>
+            </div>
+
+        </div>
+        <div class="d-flex flex-row mt-3">
+            <div class="d-flex flex-row flex-wrap justify-content-start col-6 ">                
+                <div class="col-5 me-5">
+                    <img src="{{asset('../img/totw-2.jpg')}}" alt="" class="img-fluid">
+                    <a href="#">Aouar</a>
+                    <p>rghfndfug hrghq i ghsdgh ezaqoegf hjqohgfk shdgf qgiq sjhg qdg ud qsghsdflghddgyhqg hdsqg</p>
+                </div>
+                <div class="col-5 me-5">
+                    <img src="{{asset('../img/TOTY-1.jpg')}}" alt="" class="img-fluid">
+                    <a href="#">Aouar</a>
+                    <p>rghfndfug hrghq i ghsdgh ezaqoegf hjqohgfk shdgf qgiq sjhg qdg ud qsghsdflghddgyhqg hdsqg</p>
+                    </div>
+                <div class="col-5 me-5">
+                    <img src="{{asset('../img/TOTY-1.jpg')}}" alt="" class="img-fluid">
+                    <a href="#">Aouar</a>
+                    <p>rghfndfug hrghq i ghsdgh ezaqoegf hjqohgfk shdgf qgiq sjhg qdg ud qsghsdflghddgyhqg hdsqg</p>
+                </div>
+                <div class="col-5 me-5">
+                    <img src="{{asset('../img/TOTY-1.jpg')}}" alt="" class="img-fluid">
+                    <a href="#">Aouar</a>
+                    <p>rghfndfug hrghq i ghsdgh ezaqoegf hjqohgfk shdgf qgiq sjhg qdg ud qsghsdflghddgyhqg hdsqg</p>
+                </div>
+            </div>
+             <div class="col-6">
+                <img src="{{asset('../img/headliner.jpg')}}" alt="" class="img-fluid">
+                <a href="#">Aouar</a>
+                <p>rghfndfug hrghq i ghsdgh ezaqoegf hjqohgfk shdgf qgiq sjhg qdg ud qsghsdflghddgyhqg hdsqg</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-block-objectif col-8 mx-auto mt-5">
+        <div class="border-bottom">
+            <h2>Objectif || Fifa 22</h2>
+        </div>
+        <p class="col-10">fh voi qsdqe jgeh gmqz hg zgh q hqegh qzoeg hzpqetg hezmo gheqogz efgoeqgfh zghzqfh z ze eifz ofh zeof jzzehf zigfuhz fogze gf iz hfqs hdfqsdhf qfh qhqzeo fhqofh zeof hof hefhzeo f</p>
+        <div class="d-flex flex-row mt-3">
+            <div class="col-6">
+                <img src="{{asset('../img/objectif.jpg')}}" alt="" class="img-fluid">
+                <a href="#">Aouar</a>
+                <p>rghfndfug hrghq i ghsdgh ezaqoegf hjqohgfk shdgf qgiq sjhg qdg ud qsghsdflghddgyhqg hdsqg</p>
+            </div>
+            <div class="d-flex flex-row flex-wrap justify-content-end col-6 ">
+                <div class="col-5 ms-5">
+                    <img src="{{asset('../img/TOTY-1.jpg')}}" alt="" class="img-fluid">
+                    <a href="#">Aouar</a>
+                    <p>rghfndfug hrghq i ghsdgh ezaqoegf hjqohgfk shdgf qgiq sjhg qdg ud qsghsdflghddgyhqg hdsqg</p>
+                </div>
+                <div class="col-5 ms-5">
+                    <img src="{{asset('../img/TOTY-1.jpg')}}" alt="" class="img-fluid">
+                    <a href="#">Aouar</a>
+                    <p>rghfndfug hrghq i ghsdgh ezaqoegf hjqohgfk shdgf qgiq sjhg qdg ud qsghsdflghddgyhqg hdsqg</p>
+                    </div>
+                <div class="col-5 ms-5">
+                    <img src="{{asset('../img/TOTY-1.jpg')}}" alt="" class="img-fluid">
+                    <a href="#">Aouar</a>
+                    <p>rghfndfug hrghq i ghsdgh ezaqoegf hjqohgfk shdgf qgiq sjhg qdg ud qsghsdflghddgyhqg hdsqg</p>
+                </div>
+                <div class="col-5 ms-5">
+                    <img src="{{asset('../img/TOTY-1.jpg')}}" alt="" class="img-fluid">
+                    <a href="#">Aouar</a>
+                    <p>rghfndfug hrghq i ghsdgh ezaqoegf hjqohgfk shdgf qgiq sjhg qdg ud qsghsdflghddgyhqg hdsqg</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+{% endblock %}
